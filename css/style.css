@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); /* Police d'écriture Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap'); /* Police d'écriture Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #e6e6e6;
+    scroll-behavior: smooth;
+}
+
+.content{
+    padding: 0 0.2%;
+    background-color: rgb(26,26,26);
+}
+
+.logo-mycoach{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    padding: 0.2% 0.2%;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.logo-mycoach-color{
+    color: #3675da;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.coach-container {
+    display: flex;
+    align-items: center;
+    padding-top: 6%;
+    justify-content: center;
+} 
+
+.coach-image {
+    width: 400px; /* Ajustez la largeur de l'image selon vos besoins */
+    height: auto; /* Assurez-vous que l'image conserve ses proportions */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+}
+
+.description-container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.description-container-text{
+    text-align: center;
+}
+
+.titre-1{
+  color: #3675da; 
+  font-weight: 500; 
+  font-size: 4.8rem; 
+  font-family: 'Roboto Condensed';
+  text-shadow: 4px 4px 10px #3675da;
+  padding-bottom: 10%;
+}
+
+.titre-2{
+  color: #3675da; 
+  font-weight: 500; 
+  font-size: 1.9rem; 
+  font-family: 'Roboto Condensed';
+  text-shadow: 3px 1px 5px #3675da;
+  padding-top: 20%;
+}
+
+
+  .presentation{
+    padding: 4% 20%;
+    margin-top: 10%;
+    background-color:rgb(28, 28, 28);
+  }
+  .presentation h1{
+    text-shadow:0 0 2px #4d84dd,0 0 30px #4d84dd,0px 0px 5px #4d84dd, 0 0 150px #4d84dd;
+    color:#1f66d8;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 6%;
+    background-color:rgb(28, 28, 28);
+  }
+
+  .presentation p{
+    text-justify: auto;
+    background-color:rgb(28, 28, 28);
+  }
+
+  .activite{
+    padding: 0 20%;
+    background-color: rgb(26,26,26);
+  }
+  .activite h1{
+    padding-top: 7%;
+    text-shadow:0 0 2px #4d84dd,0 0 30px #4d84dd,0px 0px 5px #4d84dd, 0 0 150px #4d84dd;
+    color:#1f66d8;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4%;
+  }
+
+  .activite p{
+    text-justify: auto;
+  }
+
+  nav{
+    width: 100%;
+    position: fixed;
+    top:80px;
+    text-align:center;
+    background-color: none;
+  }
+  nav a{
+    font-family: 'Oswald', sans-serif;
+    font-weight:500;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#ffffff;
+    margin:0 15px;
+    font-size:16px;
+    letter-spacing:1px;
+    position:relative;
+    display:inline-block;
+  }
+  nav a:before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background:#ffffff;
+    top:47%;
+    animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+  }
+  nav a:hover:before{
+    animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+  
+  }
+  @keyframes in{
+    0%{
+      width: 0;
+      left:0;
+      right:auto;
+    }
+    100%{
+      left:0;
+      right:auto;
+      width: 100%;
+    }
+  }
+  @keyframes out{
+    0%{
+      width:100%;
+      left: auto;
+      right: 0;
+    }
+    100%{
+      width: 0;
+      left: auto;
+      right: 0;
+    }
+  }
+
+.blue-color{
+    color: #3675da;
+    font-weight: 600;
+}
+
+.coach-image img:hover{
+  transform: scale(1.1);
+
+}

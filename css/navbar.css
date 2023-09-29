@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Work+Sans:wght@300;500&display=swap');
+
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        height: 100vh;
+    }
+
+    .logo-mycoach-color{
+        color: #3675da;
+        font-weight: 600;
+        font-size: 2.5rem;
+      }
+
+      .logo-mycoach{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 2.2rem;
+        padding: 0.2% 0.2%;
+        text-align: center;
+        margin-bottom: 1%;
+    }
+    .preview-description .eyelid {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 300;
+    }
+
+    .preview-description h1 {
+        margin: 10px;
+        -webkit-text-fill-color: #42ffc0;
+        -webkit-text-stroke: 3px #42ffc0;
+        font-size: 55px;
+        font-family: 'Oxygen', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: -4px;
+    }
+
+    .preview {
+        background-color: #131313;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px -17px rgba(0, 0, 0, 0.34);
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo:hover {
+        cursor: crosshair;
+    }
+
+    #logo:hover path {
+        fill: white;
+        transition: 100ms all ease-in-out;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-evenly;
+        max-height: 39px;
+        overflow: hidden;
+    }
+
+    .nav {
+        margin: 10px 15px;
+        color: #3675da;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Work Sans', sans-serif;
+        transition: 200ms;
+    }
+
+    .nav:hover {
+        color: white;
+        transition: 200ms;
+    }
+
+    .justify-content-center {
+        gap: 20px;
+        justify-content: center !important;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        color: black;
+        font-size: 12px;
+        text-align: right;
+        font-family: monospace;
+    }
+
+    .footer a {
+        color: black;
+        text-decoration: none;
+    }
+    
