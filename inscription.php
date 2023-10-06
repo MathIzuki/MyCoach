@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inscription</title>
     <link rel="stylesheet" href="css/connexioninscription.css">
     <style>
         body {
@@ -26,9 +26,31 @@
 <body class="fade-in-out">
 <?php include('includes/header.php'); ?>
 <div class="container">
-    <h2 class="login-title">Connexion</h2>
+    <h2 class="login-title">Inscription</h2>
 
-    <form class="login-form" action="config/connectuser.php" method="post">
+    <form class="login-form" action="config/inscrireuser.php" method="post">
+      <div>
+        <label for="nom">Nom </label>
+        <input
+               id="nom"
+               type="text"
+               placeholder="Nom"
+               name="nom"
+               required
+               />
+      </div>
+
+      <div>
+        <label for="prenom">Prénom </label>
+        <input
+               id="prenom"
+               type="text"
+               placeholder="Prénom"
+               name="prenom"
+               required
+               />
+      </div>
+
       <div>
         <label for="email">Email </label>
         <input
@@ -51,8 +73,8 @@
                />
       </div>
 
-      <button class="btn btn--form" type="submit" value="Log in" method="POST" name="submit" action="config/requeteutilisateur.php">
-        Se connecter
+      <button class="btn btn--form" type="submit" value="S'inscrire" method="POST" name="submit">
+        S'inscrire
       </button>
     </form>
 </div>

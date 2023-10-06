@@ -11,9 +11,13 @@
     scroll-behavior: smooth;
 }
 
+
+body{
+  background-color: rgb(26,26,26);
+}
+
 .content{
     padding: 0 0.2%;
-    background-color: rgb(26,26,26);
 }
 
 .logo-mycoach{

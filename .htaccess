@@ -1,2 +1,1 @@
-RewriteEngine On
 ErrorDocument 404 /erreur404.php

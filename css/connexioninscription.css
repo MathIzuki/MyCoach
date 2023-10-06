@@ -19,10 +19,11 @@
   body {
     font-family: sans-serif;
     line-height: 1.4;
-    display: flex;
+
   }
   
   .container {
+    margin-top: 8% !important;
     width: 400px;
     margin: auto;
     padding: 36px 48px 48px 48px;
