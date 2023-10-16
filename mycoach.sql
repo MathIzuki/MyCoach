@@ -127,8 +127,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `email` varchar(100) NOT NULL,
   `mot_de_passe` varchar(100) NOT NULL,
   `date_inscription` date NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `email` (`email`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
