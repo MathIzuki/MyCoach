@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : ven. 29 sep. 2023 à 14:52
+-- Généré le : mar. 17 oct. 2023 à 17:15
 -- Version du serveur : 8.0.31
 -- Version de PHP : 8.0.26
 
@@ -128,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `mot_de_passe` varchar(100) NOT NULL,
   `date_inscription` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `utilisateurs`
@@ -144,7 +144,7 @@ INSERT INTO `utilisateurs` (`id`, `nom`, `prenom`, `email`, `mot_de_passe`, `dat
 (7, 'Fournier', 'Thomas', 'thomas.fournier@example.com', '$2y$12$rQvAoH6I7SY0ijHTLqts2uEFvz0mczx3tkiQZi3qS.VY2fhKST6c2', '2023-10-05'),
 (8, 'Moreau', 'Elodie', 'elodie.moreau@example.com', '$2y$12$P9eDlFQcr3vKcFnR0lqMeeEwKQsAMIfk7QOpF5Fw3UsdEChcOLyyg', '2023-10-06'),
 (9, 'Girard', 'Antoine', 'antoine.girard@example.com', '$2y$12$rQvAoH6I7SY0ijHTLqts2uEFvz0mczx3tkiQZi3qS.VY2fhKST6c2', '2023-10-07'),
-(10, 'Petit', 'Charlotte', 'charlotte.petit@example.com', '$2y$12$P9eDlFQcr3vKcFnR0lqMeeEwKQsAMIfk7QOpF5Fw3UsdEChcOLyyg', '2023-10-08');
+(10, 'Petit', 'Charlotte', 'charlotte.petit@example.com', '$2y$12$P9eDlFQcr3vKcFnR0lqMeeEwKQsAMIfk7QOpF5Fw3UsdEChcOLyyg', '2023-10-08'),
 
 --
 -- Contraintes pour les tables déchargées

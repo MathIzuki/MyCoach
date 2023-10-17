@@ -1,82 +1,73 @@
-<?php include_once('config/connectuser.php'); ?>
+<?php 
+// Inclusion du fichier d'inscription utilisateur
+include_once('config/inscrireuser.php');
+?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription</title>
+    <title>MyCoach - Inscription</title>
     <link rel="stylesheet" href="css/connexioninscription.css">
-    <style>
-        body {
-            animation: fadeInAnimation ease 1s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-        }
-        @keyframes fadeInAnimation {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/animationpage.css" />
 </head>
 <body class="fade-in-out">
-<?php include('includes/header.php'); ?>
-<div class="container">
-    <h2 class="login-title">Inscription</h2>
+    <?php include('includes/header.php'); ?>
+    <div class="container">
+        <h2 class="login-title">Inscription</h2>
+        <form class="login-form" method="post">
+            <section>
+                <label for="nom">Nom</label>
+                <input
+                    id="nom"
+                    type="text"
+                    placeholder="Nom"
+                    name="nom"
+                    required
+                />
+            </section>
 
-    <form class="login-form" action="config/inscrireuser.php" method="post">
-      <div>
-        <label for="nom">Nom </label>
-        <input
-               id="nom"
-               type="text"
-               placeholder="Nom"
-               name="nom"
-               required
-               />
-      </div>
+            <section>
+                <label for="prenom">Prénom</label>
+                <input
+                    id="prenom"
+                    type="text"
+                    placeholder="Prénom"
+                    name="prenom"
+                    required
+                />
+            </section>
 
-      <div>
-        <label for="prenom">Prénom </label>
-        <input
-               id="prenom"
-               type="text"
-               placeholder="Prénom"
-               name="prenom"
-               required
-               />
-      </div>
+            <section>
+                <label for="email">Email</label>
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="exemple@gmail.com"
+                    name="email"
+                    required
+                />
+                <p style="color:#ff5959;"><?php echo $emailError; ?> </p>
+            </section>
 
-      <div>
-        <label for="email">Email </label>
-        <input
-               id="email"
-               type="email"
-               placeholder="exemple@gmail.com"
-               name="email"
-               required
-               />
-      </div>
-
-      <div>
-        <label for="password">Mot de passe </label>
-        <input
-               id="password"
-               type="password"
-               placeholder="Mot de passe"
-               name="password"
-               required
-               />
-      </div>
-
-      <button class="btn btn--form" type="submit" value="S'inscrire" method="POST" name="submit">
-        S'inscrire
-      </button>
-    </form>
-</div>
+            <section>
+                <label for="password">Mot de passe</label>
+                <input
+                    id="password"
+                    type="password"
+                    placeholder="Mot de passe"
+                    name="password"
+                    required
+                />
+            </section>
+            <div class="message-form">
+                <p>Vous avez un compte ? <a href="connection.php">Connectez-vous</a></p>
+            </div>
+            <button class="btn btn--form" type="submit" name="submit">
+                S'inscrire
+            </button>
+        </form>
+    </div>
 </body>
 </html>

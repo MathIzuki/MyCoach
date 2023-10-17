@@ -14,6 +14,7 @@
 .content{
     padding: 0 0.2%;
     background-color: rgb(26,26,26);
+    padding-bottom: 4% !important;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
@@ -70,8 +71,6 @@ div.table-title {
   animation: float 5s infinite;
   
 }
- 
-
 
 th {
   color:#D5DDE5;;
@@ -174,3 +173,46 @@ td.text-right {
   text-align: right;
 }
 
+/* Style pour le conteneur des listes déroulantes */
+form {
+  display: inline-block; /* Pour aligner horizontalement les listes déroulantes */
+  margin-right: 10px; /* Marge entre les listes déroulantes */
+}
+
+/* Style pour les labels des listes déroulantes */
+form label {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #ffffff; /* Couleur du texte */
+}
+
+/* Style pour les listes déroulantes */
+form select {
+  padding: 8px; /* Rembourrage interne */
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 5px; /* Coins arrondis */
+  background-color: #f9f9f9; /* Couleur de fond */
+  color: #333; /* Couleur du texte */
+  font-size: 16px; /* Taille de la police */
+}
+
+/* Style pour les options de la liste déroulante au survol */
+form select:hover {
+  border: 1px solid #999; /* Bordure au survol */
+}
+
+/* Style pour les options de la liste déroulante au survol */
+form select:focus {
+  outline: none; /* Supprimer l'effet de focus par défaut */
+  border: 1px solid #007bff; /* Bordure au focus */
+}
+
+form option{
+  color: black;
+}
+
+.listederoulantes{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}

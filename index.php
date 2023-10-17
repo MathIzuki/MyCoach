@@ -1,22 +1,25 @@
-<?php session_start() ?>
+<?php
+// Démarrage de la session
+session_start();
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animationpage.css">
     <title>My Coach - Accueil</title>
-    
 </head>
-<body>
+<body class="fade-in-out">
     <!-- Contenu du site -->
     <section class="content">
         <!-- En-tête de la page -->
-        <?php include('includes/header.php'); 
-        ?>
+        <?php include('includes/header.php'); ?>
         
         <!-- Contenu principal -->
-        <div class="coach-container">
+        <section class="coach-container">
             <div class="description-container">
                 <img src="img/photocoach.png" alt="Coach de Sport" class="coach-image">
                 <div class="description-container-text">
@@ -25,23 +28,25 @@
                     <h1 class="titre-2">BENJAMIN - COACH SPORTIF DEPUIS 15 ANNÉES CONSÉCUTIVES</h1>
                 </div>
             </div>
-        </div>
+        </section>
         
         <!-- Présentation du coach -->
         <section class="presentation">
             <h1 style="color: #b7cef3;">A PROPOS DE MOI</h1>
-            <p>Salut, je suis <span class="blue-color">Benjamin Mitchell</span>, coach de vie et de carrière originaire de Londres, en Angleterre. 
+            <p>
+                Salut, je suis <span class="blue-color">Benjamin Mitchell</span>, coach de vie et de carrière originaire de Londres, en Angleterre. 
                 J'ai consacré plus de 15 ans de ma vie à aider les gens à atteindre leurs <span class="blue-color">objectifs personnels et professionnels.</span><br><br>
     
-                Mon parcours a commencé lorsque j'ai décroché mon diplôme en psychologie à <span class="blue-color">l'Université d'Oxford.</span>.
+                Mon parcours a commencé lorsque j'ai décroché mon diplôme en psychologie à <span class="blue-color">l'Université d'Oxford</span>.
                 Cette expérience m'a donné une solide base pour comprendre <span class="blue-color">les motivations et les défis des individus. </span>
-                J'ai ensuite choisi de <span class="blue-color">me spécialiser dans le coaching, suivant une formation complète à la London School of Coaching, </span>
+                J'ai ensuite choisi de <span class="blue-color">me spécialiser dans le coaching, suivant une formation complète à la London School of Coaching</span>,
                 où j'ai perfectionné mes compétences pour aider les autres à surmonter les obstacles qui se dressent sur leur chemin.
                 Ma clientèle est variée, allant de cadres supérieurs à des étudiants en quête de direction. <br><br>
                 Ce que j'apprécie le plus dans le coaching, c'est la possibilité de travailler de manière holistique avec mes clients. 
                 J'accorde une grande importance à l'équilibre entre vie professionnelle et vie personnelle, et je m'efforce de les aider à exploiter tout leur potentiel.
                 J'aime motiver les autres à réaliser leurs rêves et à les guider vers le succès. 
-                Pour moi, le coaching va au-delà d'un simple métier, c'est une passion qui me permet d'inspirer et de transformer la vie de nombreuses personnes.</p>
+                Pour moi, le coaching va au-delà d'un simple métier, c'est une passion qui me permet d'inspirer et de transformer la vie de nombreuses personnes.
+            </p>
         </section>
         
         <!-- Activités -->

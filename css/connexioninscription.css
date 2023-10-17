@@ -97,4 +97,13 @@
     background-color: rgba(26, 26, 26);
     color: #3675da;
   }
-  
+
+  .message-form p{
+    color: white;
+  }
+
+  .message-form a{
+    color: #3675da;
+    font-weight: 600;
+    text-decoration: none;
+  }
