@@ -5,11 +5,11 @@ $emailError = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Récupérez les données soumises par le formulaire
-    $nom = $_POST['nom'];
-    $prenom = $_POST['prenom'];
-    $email = $_POST['email'];
+    $nom = htmlentities($_POST['nom'], ENT_QUOTES, "UTF-8");
+    $prenom = htmlentities($_POST['prenom'], ENT_QUOTES, "UTF-8");
+    $email = htmlentities($_POST['email'], ENT_QUOTES, "UTF-8");
     $password = $_POST['password'];
-
+    
     // Vérifiez que tous les champs sont remplis
     if (empty($nom) || empty($prenom) || empty($email) || empty($password)) {
         echo "Tous les champs sont obligatoires. Veuillez remplir tous les champs.";
@@ -56,4 +56,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 }
+
 ?>
